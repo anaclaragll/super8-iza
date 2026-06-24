@@ -1,0 +1,243 @@
+{
+    "formato": "rotativas",
+    "rodadas": [
+        {
+            "numero": 1,
+            "concluida": false,
+            "partidas": [
+                {
+                    "id_partida": 1,
+                    "quadra": 1,
+                    "dupla_a": [
+                        1,
+                        2
+                    ],
+                    "dupla_b": [
+                        3,
+                        4
+                    ],
+                    "placar_a": null,
+                    "placar_b": null
+                },
+                {
+                    "id_partida": 2,
+                    "quadra": 2,
+                    "dupla_c": [
+                        5,
+                        6
+                    ],
+                    "dupla_d": [
+                        7,
+                        8
+                    ],
+                    "placar_c": null,
+                    "placar_d": null
+                }
+            ]
+        },
+        {
+            "numero": 2,
+            "concluida": false,
+            "partidas": [
+                {
+                    "id_partida": 3,
+                    "quadra": 1,
+                    "dupla_a": [
+                        1,
+                        3
+                    ],
+                    "dupla_b": [
+                        2,
+                        5
+                    ],
+                    "placar_a": null,
+                    "placar_b": null
+                },
+                {
+                    "id_partida": 4,
+                    "quadra": 2,
+                    "dupla_c": [
+                        4,
+                        7
+                    ],
+                    "dupla_d": [
+                        6,
+                        8
+                    ],
+                    "placar_c": null,
+                    "placar_d": null
+                }
+            ]
+        },
+        {
+            "numero": 3,
+            "concluida": false,
+            "partidas": [
+                {
+                    "id_partida": 5,
+                    "quadra": 1,
+                    "dupla_a": [
+                        1,
+                        4
+                    ],
+                    "dupla_b": [
+                        2,
+                        7
+                    ],
+                    "placar_a": null,
+                    "placar_b": null
+                },
+                {
+                    "id_partida": 6,
+                    "quadra": 2,
+                    "dupla_c": [
+                        3,
+                        6
+                    ],
+                    "dupla_d": [
+                        5,
+                        8
+                    ],
+                    "placar_c": null,
+                    "placar_d": null
+                }
+            ]
+        },
+        {
+            "numero": 4,
+            "concluida": false,
+            "partidas": [
+                {
+                    "id_partida": 7,
+                    "quadra": 1,
+                    "dupla_a": [
+                        1,
+                        5
+                    ],
+                    "dupla_b": [
+                        2,
+                        4
+                    ],
+                    "placar_a": null,
+                    "placar_b": null
+                },
+                {
+                    "id_partida": 8,
+                    "quadra": 2,
+                    "dupla_c": [
+                        3,
+                        8
+                    ],
+                    "dupla_d": [
+                        6,
+                        7
+                    ],
+                    "placar_c": null,
+                    "placar_d": null
+                }
+            ]
+        },
+        {
+            "numero": 5,
+            "concluida": false,
+            "partidas": [
+                {
+                    "id_partida": 9,
+                    "quadra": 1,
+                    "dupla_a": [
+                        1,
+                        6
+                    ],
+                    "dupla_b": [
+                        2,
+                        8
+                    ],
+                    "placar_a": null,
+                    "placar_b": null
+                },
+                {
+                    "id_partida": 10,
+                    "quadra": 2,
+                    "dupla_c": [
+                        3,
+                        5
+                    ],
+                    "dupla_d": [
+                        4,
+                        7
+                    ],
+                    "placar_c": null,
+                    "placar_d": null
+                }
+            ]
+        },
+        {
+            "numero": 6,
+            "concluida": false,
+            "partidas": [
+                {
+                    "id_partida": 11,
+                    "quadra": 1,
+                    "dupla_a": [
+                        1,
+                        7
+                    ],
+                    "dupla_b": [
+                        3,
+                        4
+                    ],
+                    "placar_a": null,
+                    "placar_b": null
+                },
+                {
+                    "id_partida": 12,
+                    "quadra": 2,
+                    "dupla_c": [
+                        2,
+                        6
+                    ],
+                    "dupla_d": [
+                        5,
+                        8
+                    ],
+                    "placar_c": null,
+                    "placar_d": null
+                }
+            ]
+        },
+        {
+            "numero": 7,
+            "concluida": false,
+            "partidas": [
+                {
+                    "id_partida": 13,
+                    "quadra": 1,
+                    "dupla_a": [
+                        1,
+                        8
+                    ],
+                    "dupla_b": [
+                        2,
+                        3
+                    ],
+                    "placar_a": null,
+                    "placar_b": null
+                },
+                {
+                    "id_partida": 14,
+                    "quadra": 2,
+                    "dupla_c": [
+                        4,
+                        5
+                    ],
+                    "dupla_d": [
+                        6,
+                        7
+                    ],
+                    "placar_c": null,
+                    "placar_d": null
+                }
+            ]
+        }
+    ]
+}
