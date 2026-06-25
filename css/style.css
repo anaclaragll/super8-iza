@@ -1,205 +1,184 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+/* --- Identidade Visual Beach Tennis Premium (Neon Dark Corrigido) --- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap');
 
 :root {
-    --primary: #0ea5e9;
-    --primary-dark: #0284c7;
-    --accent: #f97316;
-    --bg-main: #f8fafc;
-    --bg-card: #ffffff;
-    --text-dark: #0f172a;
-    --text-muted: #64748b;
+    --bg-main: #0b0f19;       /* Grafite ultra escuro (fundo) */
+    --bg-card: #151d30;       /* Azul marinho escuro para os blocos */
+    --primary: #ccff00;       /* Verde Neon */
+    --accent: #ff6b00;        /* Laranja Sunset */
+    --text-main: #f8fafc;     /* Branco nítido */
+    --text-muted: #94a3b8;    /* Cinza sutil */
+    --border: #222f4c;        /* Linhas divisórias discretas */
     --success: #10b981;
     --danger: #ef4444;
-    --border: #e2e8f0;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'Outfit', system-ui, sans-serif;
 }
 
 body {
     background-color: var(--bg-main);
-    color: var(--text-dark);
-    line-height: 1.5;
-    padding: 30px 15px;
+    color: var(--text-main);
+    padding: 40px 20px;
     -webkit-font-smoothing: antialiased;
 }
 
+/* Container Principal */
 .container {
-    max-width: 850px;
+    max-width: 800px;
     margin: 0 auto;
     background: var(--bg-card);
-    padding: 35px;
-    border-radius: 16px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 24px;
     border: 1px solid var(--border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Header Estilo Executivo */
+/* Header */
 .main-header {
-    margin-bottom: 35px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
 }
 
-.badge-live {
-    display: inline-block;
-    background: #fee2e2;
-    color: #ef4444;
-    font-size: 0.75rem;
-    font-weight: 700;
+/* Forçando cor branca nos títulos principais para não sumirem */
+h1, .container h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
     text-transform: uppercase;
-    padding: 2px 8px;
-    border-radius: 4px;
-    margin-bottom: 8px;
+    letter-spacing: -0.03em;
+    color: #ffffff !important;
+    margin-bottom: 5px;
+}
+
+h2, .container h2 {
+    font-size: 1.1rem;
+    color: var(--primary) !important;
+    font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
-h1 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--text-dark);
+h3, .container h3 {
+    color: #ffffff !important;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
-h2 {
-    font-size: 1rem;
-    color: var(--text-muted);
-    font-weight: 400;
-    margin-top: 2px;
-}
-
-/* Dashboard Grid & Cards System */
+/* Grid de Cards */
 .dashboard-grid {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
 }
 
 .dash-card {
     display: flex;
     align-items: center;
-    padding: 20px;
-    background: #ffffff;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 16px;
     text-decoration: none;
-    color: inherit;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--text-main) !important;
+    transition: all 0.3s ease;
 }
 
 .card-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 10px;
-    font-size: 1.25rem;
-    margin-right: 20px;
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    margin-right: 24px;
     flex-shrink: 0;
-    background: #f1f5f9;
-    color: var(--text-muted);
-    transition: background 0.2s;
-}
-
-.card-content h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-dark);
-    margin-bottom: 3px;
+    background: var(--bg-main);
+    color: #ffffff;
+    border: 1px solid var(--border);
 }
 
 .card-content p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
 }
 
-/* Hover e Estilos Dinâmicos dos Cards */
+/* Hovers */
 .dash-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04);
+    background: rgba(255, 255, 255, 0.04);
+    transform: scale(1.01);
 }
-
 .dash-card.action-new:hover { border-color: var(--accent); }
-.dash-card.action-new:hover .card-icon { background: #fff7ed; color: var(--accent); }
+.dash-card.action-new:hover .card-icon { color: var(--accent); border-color: var(--accent); }
 
 .dash-card.action-primary:hover { border-color: var(--primary); }
-.dash-card.action-primary:hover .card-icon { background: #e0f2fe; color: var(--primary); }
+.dash-card.action-primary:hover .card-icon { color: var(--primary); border-color: var(--primary); }
 
 .dash-card.action-success:hover { border-color: var(--success); }
-.dash-card.action-success:hover .card-icon { background: #ecfdf5; color: var(--success); }
+.dash-card.action-success:hover .card-icon { color: var(--success); border-color: var(--success); }
 
-.dash-card.action-warning:hover { border-color: #eab308; }
-.dash-card.action-warning:hover .card-icon { background: #fef9c3; color: #eab308; }
-
-/* Botões para telas internas */
+/* Botões Modernos */
 button, .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: var(--text-dark);
-    color: white;
-    padding: 10px 20px;
+    background: var(--primary);
+    color: var(--bg-main) !important; /* Texto escuro dentro do botão neon para dar leitura */
+    padding: 14px 28px;
     border: none;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 0.95rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
     cursor: pointer;
     text-decoration: none;
-    transition: opacity 0.2s;
+    transition: all 0.2s;
 }
-button:hover, .btn:hover { opacity: 0.9; }
+button:hover, .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 20px rgba(204, 255, 0, 0.4);
+}
 
-/* Formulários Internos */
+/* Formulários */
 .jogador-input {
-    background: #f8fafc;
-    padding: 16px;
-    border-radius: 10px;
-    margin-bottom: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 16px;
     border: 1px solid var(--border);
+}
+
+label {
+    display: block;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
 }
 
 input[type="text"], input[type="number"] {
     width: 100%;
-    padding: 10px 14px;
-    border: 1px solid #cbd5e1;
-    border-radius: 6px;
-    font-size: 0.95rem;
+    padding: 12px 16px;
+    background: var(--bg-main);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+}
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: var(--primary);
 }
 
-/* Estilo para as opções de rádio (substituindo o :has que causava erro) */
-.opcao-formato {
-    border: 2px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-    cursor: pointer;
-    transition: all 0.2s;
-    background: #ffffff;
-}
-
-.opcao-formato label strong {
-    font-weight: 700;
-    color: var(--text-dark);
-}
-
-.opcao-formato label p {
-    font-size: 0.9rem;
-    margin-top: 4px;
-}
-
-.opcao-formato input[type="radio"] {
-    margin-right: 12px;
-}
-
-/* Tabelas */
+/* Tabelas e Resultados estilo Placar Eletrônico */
 .table-container {
     overflow-x: auto;
-    margin-top: 20px;
-    border-radius: 8px;
+    margin-top: 30px;
+    border-radius: 14px;
     border: 1px solid var(--border);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 table {
@@ -208,38 +187,31 @@ table {
 }
 
 th, td { 
-    padding: 14px; 
+    padding: 18px 14px; 
     text-align: center; 
-    font-size: 0.95rem; 
+    color: #ffffff;
 }
 
 th { 
-    background: #f8fafc; 
+    background: rgba(0, 0, 0, 0.4); 
     font-weight: 600; 
     color: var(--text-muted); 
-    border-bottom: 1px solid var(--border); 
+    text-transform: uppercase; 
+    font-size: 0.8rem; 
+    letter-spacing: 0.05em; 
 }
 
 td { 
-    border-bottom: 1px solid #f1f5f9; 
+    border-bottom: 1px solid var(--border); 
+}
+
+tr:last-child td { 
+    border-bottom: none; 
 }
 
 tr:hover td { 
-    background: #f8fafc; 
+    background: rgba(255, 255, 255, 0.02); 
 }
 
 .text-left { text-align: left; }
-.fw-bold { font-weight: bold; }
-
-/* Ajuste para remover emojis e deixar mais limpo */
-.card-icon {
-    font-style: normal;
-    font-weight: bold;
-}
-
-/* Estilo para inputs menores de apelido */
-input[placeholder*="Apelido"] {
-    background: #fdfdfd;
-    height: 35px;
-    padding: 5px 10px;
-}
+.fw-bold { font-weight: 600; }

@@ -1,9 +1,9 @@
 {
-    "formato": "rotativas",
+    "formato": "fixas",
     "rodadas": [
         {
             "numero": 1,
-            "concluida": false,
+            "concluida": true,
             "partidas": [
                 {
                     "id_partida": 1,
@@ -13,25 +13,25 @@
                         2
                     ],
                     "dupla_b": [
-                        3,
-                        4
+                        7,
+                        8
                     ],
-                    "placar_a": null,
-                    "placar_b": null
+                    "placar_a": 4,
+                    "placar_b": 6
                 },
                 {
                     "id_partida": 2,
                     "quadra": 2,
                     "dupla_c": [
+                        3,
+                        4
+                    ],
+                    "dupla_d": [
                         5,
                         6
                     ],
-                    "dupla_d": [
-                        7,
-                        8
-                    ],
-                    "placar_c": null,
-                    "placar_d": null
+                    "placar_c": 1,
+                    "placar_d": 5
                 }
             ]
         },
@@ -44,11 +44,11 @@
                     "quadra": 1,
                     "dupla_a": [
                         1,
-                        3
+                        2
                     ],
                     "dupla_b": [
-                        2,
-                        5
+                        5,
+                        6
                     ],
                     "placar_a": null,
                     "placar_b": null
@@ -57,12 +57,12 @@
                     "id_partida": 4,
                     "quadra": 2,
                     "dupla_c": [
-                        4,
-                        7
+                        7,
+                        8
                     ],
                     "dupla_d": [
-                        6,
-                        8
+                        3,
+                        4
                     ],
                     "placar_c": null,
                     "placar_d": null
@@ -78,11 +78,11 @@
                     "quadra": 1,
                     "dupla_a": [
                         1,
-                        4
+                        2
                     ],
                     "dupla_b": [
-                        2,
-                        7
+                        3,
+                        4
                     ],
                     "placar_a": null,
                     "placar_b": null
@@ -91,11 +91,11 @@
                     "id_partida": 6,
                     "quadra": 2,
                     "dupla_c": [
-                        3,
+                        5,
                         6
                     ],
                     "dupla_d": [
-                        5,
+                        7,
                         8
                     ],
                     "placar_c": null,
@@ -112,11 +112,11 @@
                     "quadra": 1,
                     "dupla_a": [
                         1,
-                        5
+                        2
                     ],
                     "dupla_b": [
-                        2,
-                        4
+                        7,
+                        8
                     ],
                     "placar_a": null,
                     "placar_b": null
@@ -126,11 +126,11 @@
                     "quadra": 2,
                     "dupla_c": [
                         3,
-                        8
+                        4
                     ],
                     "dupla_d": [
-                        6,
-                        7
+                        5,
+                        6
                     ],
                     "placar_c": null,
                     "placar_d": null
@@ -146,11 +146,11 @@
                     "quadra": 1,
                     "dupla_a": [
                         1,
-                        6
+                        2
                     ],
                     "dupla_b": [
-                        2,
-                        8
+                        5,
+                        6
                     ],
                     "placar_a": null,
                     "placar_b": null
@@ -159,12 +159,12 @@
                     "id_partida": 10,
                     "quadra": 2,
                     "dupla_c": [
-                        3,
-                        5
+                        7,
+                        8
                     ],
                     "dupla_d": [
-                        4,
-                        7
+                        3,
+                        4
                     ],
                     "placar_c": null,
                     "placar_d": null
@@ -180,7 +180,7 @@
                     "quadra": 1,
                     "dupla_a": [
                         1,
-                        7
+                        2
                     ],
                     "dupla_b": [
                         3,
@@ -193,11 +193,11 @@
                     "id_partida": 12,
                     "quadra": 2,
                     "dupla_c": [
-                        2,
+                        5,
                         6
                     ],
                     "dupla_d": [
-                        5,
+                        7,
                         8
                     ],
                     "placar_c": null,
@@ -214,11 +214,11 @@
                     "quadra": 1,
                     "dupla_a": [
                         1,
-                        8
+                        2
                     ],
                     "dupla_b": [
-                        2,
-                        3
+                        7,
+                        8
                     ],
                     "placar_a": null,
                     "placar_b": null
@@ -227,12 +227,12 @@
                     "id_partida": 14,
                     "quadra": 2,
                     "dupla_c": [
-                        4,
-                        5
+                        3,
+                        4
                     ],
                     "dupla_d": [
-                        6,
-                        7
+                        5,
+                        6
                     ],
                     "placar_c": null,
                     "placar_d": null
